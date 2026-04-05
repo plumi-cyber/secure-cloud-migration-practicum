@@ -8,7 +8,7 @@ integrity across the full migration.
 
 **Organization:** Autism Today Foundation  
 **Role:** Cybersecurity Practicum Student  
-**Duration:** April – [End Month] 2026  
+**Duration:** April – June 2026  
 **Supervised by:** Jonathan, Head of Cybersecurity Department
 
 ## Skills Demonstrated
