@@ -4,4 +4,4 @@
 
 # [To be populated during implementation phase]
 
-echo "Migration script placeholder"
+echo "Migration script placeholder."
