@@ -1,4 +1,6 @@
-# Directory Schema
+# Directory Schema - Finalized
+
+
 
 [DRIVE_LABEL]/
 ├── Autism_Today/
@@ -38,11 +40,11 @@
 │   └── BURNINGSTATION/
 └── Unsorted/
 
-#Design Decisions
+## Design Decisions
 
-Each business entity has its own Media, Financial, and Legal subfolders to avoid ambiguity when sorting files.
-Mediation is a separate, different operational domain from the call center businesses.
-Personal DOCS remains its own category per supervisor instruction.
-System backups are retained temporarily — will be deleted after confirming no data is missing from the main archive.
-Unsorted folder for files that don't clearly fit any category — to be reviewed by stakeholders.
-No top-level Financial or Legal — finances are intertwined with specific business entities, so financial/legal docs go under their respective entities.
+- Each business entity has its own Media, Financial, and Legal subfolders to avoid ambiguity when sorting files.
+- Mediation is separate — a different operational domain from the call center businesses.
+- Personal DOCS remains its own category per supervisor instruction.
+- System backups retained temporarily — will be deleted after confirming no data is missing from the main archive.
+- Unsorted folder for files that don't clearly fit any category — to be reviewed by stakeholders.
+- No top-level Financial or Legal — finances are intertwined with specific business entities, so financial/legal docs go under their respective entities.
