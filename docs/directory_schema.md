@@ -39,6 +39,7 @@
 └── Unsorted/
 
 #Design Decisions
+
 Each business entity has its own Media, Financial, and Legal subfolders to avoid ambiguity when sorting files.
 Mediation is a separate, different operational domain from the call center businesses.
 Personal DOCS remains its own category per supervisor instruction.
