@@ -1,68 +1,76 @@
-# Secure Cloud Data Migration — Cybersecurity Practicum
+# Secure Cloud Migration Practicum
+
+A cybersecurity practicum project focused on organizing and securely migrating ~8TB of poorly structured data from legacy storage to a secure replacement system. Completed as part of a cybersecurity diploma at Alberta Education Center.
 
 ## Project Overview
-Planned and executed a secure migration of ~8TB of data from a retiring cloud system 
-to a secure replacement for Autism Today Foundation. Designed a structured directory 
-hierarchy with role-based access controls, implemented encryption, and verified file 
-integrity across the full migration.
 
-**Organization:** Autism Today Foundation  
-**Role:** Cybersecurity Practicum Student  
-**Duration:** April – June 2026  
-**Supervised by:** Jonathan, Head of Cybersecurity Department
+A nonprofit organization needed to consolidate data from multiple legacy drives into a structured, secure storage system. The data originated from forensic recovery operations and included files from multiple source devices, business entities, and personal backups — all in an unorganized state.
 
-## Skills Demonstrated
-- Linux file management and administration (rsync, find, chmod, chown, ACLs)
-- Disk encryption with LUKS (cryptsetup)
-- File integrity verification using SHA-256 hash manifests
-- Cloud storage security and IAM access controls
-- Directory hierarchy design with role-based permissions
-- Bash scripting for automation
-- Risk assessment and migration planning
-- Technical documentation and reporting
+**Scope:** Assess source data, design a directory taxonomy, organize ~3.55TB across multiple business entities, verify file integrity, and prepare for migration to the destination storage platform.
 
-## Tools & Technologies
-- Ubuntu (WSL2)
-- cryptsetup / LUKS
-- rsync
-- GnuPG (gpg)
-- SHA-256 (sha256sum)
-- Cloud platform: [TBD — update after first meeting]
+## Skills & Tools
 
-## Project Phases
-1. **Assessment & Discovery** — Evaluated current data organization, identified stakeholders and access requirements
-2. **Planning** — Designed directory schema, permission matrix, and phased migration plan
-3. **Security Controls** — Implemented encryption, access controls, and logging
-4. **Migration Execution** — Transferred data in batches with integrity verification per batch
-5. **Verification & Testing** — Compared hash manifests, tested access controls, and confirmed zero data loss
+- **Linux administration:** Ubuntu (WSL2 + VirtualBox VM), bash scripting, mount operations, user permissions
+- **Encryption:** LUKS (cryptsetup), dm-crypt kernel module, encrypted volume management
+- **Data assessment:** disk forensics (blkid, xxd, TestDisk), file type analysis (find, sed, sort, uniq), disk usage analysis (du)
+- **File operations:** rsync, mv, find, tree, directory structure design
+- **Integrity verification:** sha256sum hash manifests, diff comparison
+- **Filesystem repair:** ntfsfix (NTFS MFT recovery)
+- **Virtualization:** VirtualBox USB passthrough, VM resource management on constrained hardware (8GB RAM)
+- **Security practices:** PII identification, credential exposure detection, data sensitivity classification, read-only mounting
+- **Documentation:** activity logging, challenge tracking, inventory reporting
 
 ## Repository Structure
-├── README.md              # Project overview (you are here)
+
+```
+secure-cloud-migration-practicum/
+├── README.md
 ├── docs/
-│   ├── directory_schema.md    # Proposed directory structure
-│   ├── permission_matrix.md   # Access control mapping
-│   └── migration_plan.md      # Phased migration plan
+│   ├── directory_schema.md        — Finalized folder hierarchy
+│   ├── drive_assessment.md        — Drive identification and access findings
+│   ├── data_inventory.md          — Full inventory results with file type analysis
+│   ├── data_integrity_report.md   — I/O errors and filesystem corruption findings
+│   ├── source_target_mapping.md   — Source-to-target sorting plan
+│   ├── migration_plan.md          — Organization workflow and methodology
+│   └── permission_matrix.md       — Access controls (TBD)
 ├── scripts/
-│   ├── set_permissions.sh     # Permission automation script
-│   ├── migrate.sh             # rsync migration script
-│   └── verify_integrity.sh    # Hash verification script
-├── screenshots/               # Evidence of setup and verification
+│   ├── set_permissions.sh         — Permission automation (TBD)
+│   ├── migrate.sh                 — Migration automation (TBD)
+│   └── verify_integrity.sh        — Hash verification automation (TBD)
+├── screenshots/
 └── logs/
-└── activity_log.md        # Daily work log with hours
+    └── activity_log.md            — Detailed activity log with commands and outcomes
+```
 
-## Key Outcomes
-- [Update after project completion]
-- [Example: Migrated X TB across Y files with zero data loss]
-- [Example: Implemented role-based access for Z user groups]
-- [Example: Verified integrity of all files via SHA-256 comparison]
+## Methodology
 
-## Certifications Aligned
-This project directly applies skills from:
-- CompTIA Security+ (SY0-701) — Domains 1, 3, 4, 5
-- CompTIA Linux+ — File management, permissions, scripting
-- TCM Security PSAA — Documentation and incident methodology
-- ISC2 CC — Access controls, security operations
+1. **Environment Setup** — Configured dual Linux environments (WSL2 for daily work, VirtualBox VM for encryption operations) to work within 8GB RAM constraints.
+2. **Assessment & Discovery** — Identified encryption type, accessed source drive, mapped contents, and flagged security concerns (exposed credentials, PII in call recordings).
+3. **Directory Design** — Analyzed source data, proposed a taxonomy based on business entities, and iterated with the supervisor to finalize the structure.
+4. **Inventory** — Ran automated inventory scripts to catalog folder sizes, file types per directory, and data integrity issues across ~3.55TB.
+5. **Organization** — Sorting data into the finalized structure, deduplicating overlapping datasets, and verifying integrity with hash manifests. *(In progress)*
+6. **Verification** — File count and hash comparison to confirm no data loss. *(Upcoming)*
 
-## Contact
-**Oluwapelumi Kolawole**  
-[LinkedIn](https://linkedin.com/in/oluwapelumi-kolawole) | pelumi.kola@gmail.com
+## Key Challenges Solved
+
+- WSL2 kernel lacks dm-crypt — pivoted to VirtualBox for encryption operations
+- USB passthrough failures — resolved via Windows Device Manager device release
+- NTFS filesystem corruption after USB disconnect — repaired with ntfsfix
+- Exposed credentials in source data — escalated immediately, proposed sensitivity classification
+- I/O errors from forensic recovery — documented affected directories, implemented error suppression and logging
+
+## Current Status
+
+- [x] Environment setup (WSL2 + VirtualBox)
+- [x] Drive access and encryption identification
+- [x] Full data inventory completed
+- [x] Directory structure finalized and created on drive
+- [x] Source-to-target mapping defined
+- [ ] Deduplication of overlapping datasets
+- [ ] File organization and sorting
+- [ ] Integrity verification
+- [ ] Migration to destination storage
+
+## Note
+
+All data, credentials, file paths, and personally identifiable information have been sanitized in this repository. No real organizational data is stored here — this repo contains documentation and scripts only.
