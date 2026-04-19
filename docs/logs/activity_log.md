@@ -57,5 +57,5 @@
 | Apr 18, 2026 | Updated portfolio documentation | Transferred Sections 4, 5, 9, and 10 into portfolio Google Doc | Portfolio current through April 18. Includes challenges #1-13. | 1.0 |
 | Apr 18, 2026 | Created practicum timesheet | Generated weekly timesheet document covering Weeks 1-3 | Timesheet ready for submission. | 0.5 |
 | Apr 18, 2026 | Created LinkedIn post | Drafted practicum experience post for professional visibility | Post ready for publishing. | 0.5 |
-| Apr 17, 2026 | Safe shutdown and drive ejection | cd ~, sudo umount, sudo cryptsetup close, detach USB, sudo shutdown now | Drive safely unmounted, LUKS closed, USB detached, VM shut down. All data and folder structure preserved. | 0.25 |
+| Apr 18, 2026 | Safe shutdown and drive ejection | cd ~, sudo umount, sudo cryptsetup close, detach USB, sudo shutdown now | Drive safely unmounted, LUKS closed, USB detached, VM shut down. All data and folder structure preserved. | 0.25 |
 | | | | **Running Total:** | **~28.50** |
