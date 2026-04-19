@@ -1,8 +1,3 @@
-
-# Activity Log
-
-| Date | Task | Commands/Actions | Outcome | Hours |
-|------|------|-----------------|---------|-------|
 # Activity Log
 
 | Date | Task | Commands/Actions | Outcome | Hours |
