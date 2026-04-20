@@ -4,7 +4,7 @@ A cybersecurity practicum project focused on organizing and securely migrating ~
 
 ## Project Overview
 
-A nonprofit organization needed to consolidate data from multiple legacy drives into a structured, secure storage system. The data originated from forensic recovery operations and included files from multiple source devices, business entities, and personal backups — all in an unorganized state.
+A nonprofit organization needs to consolidate data from multiple legacy drives into a structured, secure storage system. The data originated from forensic recovery operations and included files from multiple source devices, business entities, and personal backups — all in an unorganized state.
 
 **Scope:** Assess source data, design a directory taxonomy, organize ~3.55TB across multiple business entities, verify file integrity, and prepare for migration to the destination storage platform.
 
