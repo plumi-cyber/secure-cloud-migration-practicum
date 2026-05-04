@@ -8,9 +8,9 @@ Completed April 17, 2026. Commands used: `du -sh` for sizes and `find` piped thr
 |--------|------|---------------|------------|
 | Web hosting data | 34G | txt (9210), mp3 (8315), php (7228), jpg (5430), png (4592), svg (2720), js (2389), pdf (1508), css (1380), html (1119) | Web assets — php, html, css, js. Target: entity-specific Media/Web_assets/ |
 | Recovered drive A | 1.1TB | wmf (129055), cdr (105098), jpg (69005), pdf (56523), mp3 (28841), eps (23991), doc (23098), gif (21530), html (20688), TTF (16817) | Design files (CorelDRAW), documents, fonts, audio. Contains I/O errors in voice verification directories. |
-| Recovered drive B | 1.5TB | wmf (128857), cdr (124437), jpg (123928), pdf (107171), txt (68553), mp3 (41789), eps (29087), doc (24855), TTF (16771), html (12760) | Nearly identical profile to Drive A — likely overlapping data. Needs deduplication assessment. |
+| Recovered drive B | 1.5TB | wmf (128857), cdr (124437), jpg (123928), pdf (107171), txt (68553), mp3 (41789), eps (29087), doc (24855), TTF (16771), html (12760) | Nearly identical profile to Drive A — likely overlapping data. Needs a deduplication assessment. |
 | Phone backup | 278M | MOV (37), JPG (36), AAE (1) | 74 files total. Personal photos and videos. Target: Personal_DOCS/ |
-| Creative workstation | 614G | jpg (345), par (34), DS_Store (27), M2V (23), ppt (21), fcp (21), mov (18), psd (16), aiff (16), mpg (15) | macOS origin. Final Cut Pro, Photoshop, video production. Target: needs entity clarification. |
+| Creative workstation | 614G | jpg (345), par (34), DS_Store (27), M2V (23), ppt (21), fcp (21), mov (18), psd (16), aiff (16), mpg (15) | macOS origin. Final Cut Pro, Photoshop, and video production. Target: needs entity clarification. |
 | Credential stores | 4.1G | final (550), sqlite (247), png (241), js (240), json (149), svg (116), dll (77), txt (68), qm (67), metadata-v2 (67) | Browser data and credentials. Most contents unreadable due to I/O errors. Awaiting supervisor guidance. |
 
 ## Previously Organized Folder Inventory
@@ -32,4 +32,20 @@ Completed April 17, 2026. Commands used: `du -sh` for sizes and `find` piped thr
 3. Financial folder contains accounting databases — must be kept intact.
 4. Media folder contains legacy file formats requiring flagging.
 5. Phone backup is trivial (74 files) — can be moved immediately.
-6. Mediation folder was never populated — data may be scattered elsewhere.
+6. The mediation folder was never populated — data may be scattered elsewhere.
+
+## Drive-Root Folders (updated May 1, 2026)
+
+| Folder | Created | Purpose |
+|--------|---------|---------|
+| Credentials/ | May 1, 2026 | Dedicated location for credential documents (password lists, login records). Cross-entity by design — not separated by data owner. Created per supervisor direction. |
+| Unsorted/ | (pre-existing) | Browser profile dumps, password vaults, and other items pending review or expected to be discarded. |
+
+## Notable Moves Since Last Update
+
+| Source (sanitized) | Destination | Size | Notes |
+|--------------------|-------------|------|-------|
+| RAW/raw-logins (browser profiles + vaults) | Unsorted/ | — | Per supervisor: browser-vault material moves to Unsorted, not Credentials. |
+| RAW/raw-logins (credential documents) | Credentials/ | — | Per supervisor: credential documents to dedicated folder. |
+| PASS 1/LEGAL/[device folder]/[entity subfolder] | Personal_DOCS/ | 192K | Two scanned documents (TIFF). PII observed; not transcribed. Flagged for supervisor review. |
+| PASS 1/LEGAL/[3 device folders] | [Entity]/Legal/ | 1.47GB | Three folders containing litigation case files. Filed per supervisor direction without the contents being inspected. Original folder structure preserved. |
