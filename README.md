@@ -67,16 +67,16 @@ secure-cloud-migration-practicum/
 - [x] Directory structure finalized and created on drive
 - [x] Source-to-target mapping defined
 - [x] Drive-wide filesystem repair verification (1,668,912 files, 0 errors)
-- [ ] File organization and sorting *(in progress — PASS 1 MEDIA)*
+- [ ] File organization and sorting *(in progress — PASS 1 MEDIA, Storage1 phase)*
 - [ ] Deduplication of overlapping datasets
 - [ ] Integrity verification
 - [ ] Migration to destination storage
 
-**Snapshot (May 5, 2026):**
-- Cumulative data filed: ~705GB (no large additions this session — work focused on inventory, supervisor consultation, and small moves)
+**Snapshot (May 9, 2026):**
+- Cumulative data filed: ~715GB (Newslink/Media/ at 623GB after Storage1 + SERVER-DATA execution this session)
 - Active blockers: None
-- Open items: SERVER-DATA + Storage1 execution (~30 folders, decisions captured), Karen folder PII routing, MEDIA/Dual Citizen and DOCUMENTS subfolders not yet inspected, Dual Citizen vs HV6205 deduplication, PASS 1 FINANCIAL sorting, two minor cleanups before final handoff
-- Hours logged: 35.75 of 100 required
+- Open items: Storage1 PII escalation (Property Documents — 172M, 36 entries flagged), 5 Storage1 folders awaiting Jonathan, ~30 loose files at Storage1 root, MEDIA/Dual Citizen and DOCUMENTS uninspected, PASS 1 FINANCIAL sorting, Dual Citizen/HV6205 deduplication, two minor cleanups
+- Hours logged: 43.5 of 100 required
 
 ## Note
 
