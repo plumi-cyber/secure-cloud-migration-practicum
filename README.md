@@ -1,6 +1,6 @@
 # Secure Cloud Migration Practicum
 
-A cybersecurity practicum project focused on organizing and securely migrating ~8TB of poorly structured data from legacy storage to a secure replacement system. Completed as part of a cybersecurity diploma at Alberta Education Center.
+A cybersecurity practicum project focused on organizing and securely migrating ~3.6TB of poorly structured data from legacy storage to a secure replacement system. Completed as part of a cybersecurity diploma at Alberta Education Center.
 
 ## Project Overview
 
