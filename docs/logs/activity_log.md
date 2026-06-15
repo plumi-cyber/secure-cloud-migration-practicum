@@ -1,7 +1,5 @@
 # Activity Log
 
-# Activity Log
-
 | Date | Task | Commands/Actions | Outcome | Hours |
 | --- | --- | --- | --- | --- |
 | Apr 3, 2026 | First meeting with supervisor and project partner | Discussed project scope, deliverables, timeline | Defined project: migrate ~8TB data, design directory hierarchy, implement encryption, verify integrity. Received source drive. Format: fully remote, self-paced, weekly/bi-weekly check-ins. 100+ hours required. | 1.5 |
