@@ -68,7 +68,7 @@ secure-cloud-migration-practicum/
 - [x] Source-to-target mapping defined
 - [x] Drive-wide filesystem repair verification (1,668,912 files, 0 errors)
 - [x] File organization and sorting *(in progress — PASS 1 MEDIA, Storage1 phase)*
-- [ ] Deduplication of overlapping datasets
+- [x] Deduplication of overlapping datasets
 - [ ] Integrity verification
 - [ ] Migration to destination storage
 
